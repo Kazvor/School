@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Школа Shelly</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1"
+  <meta name="author" content="merkulove">
+  <meta name="keywords" content="">
+  <link rel="icon" href="{% static '/assets/img/favicon.png'%}">
+  <link rel="stylesheet" type="text/css" href="{% static '/assets/css/main.min.css'%}">
+  <link rel="stylesheet" type="text/css" href="{% static '/assets/css/button.min.css'%}">
+</head>
+
+<body>
+
+{% include 'header.html' %}
+
+{% block main %}
+
+{% endblock %}
+
+{% include 'footer.html' %}
+     
+    <!--newsletter-sec end-->
+ 
+  
+  <script src="{% static '/assets/js/bundle.min.js'%}"></script>
+  <script src="{% static '/assets/js/button.min.js'%}"></script><!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180910402-1"></script>
+  <script>window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-180910402-1');</script>
+</body>
+
+</html>
